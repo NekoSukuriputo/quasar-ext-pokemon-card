@@ -1,13 +1,13 @@
 {
   "name": "quasar-app-extension-poke-card-v1",
-  "version": "0.0.1",
+  "version": "0.1.0-alpha",
   "description": "A Quasar App Extension",
   "author": "Abdul Rahmat <abdulrahmat97dev@gmail.com>",
   "license": "MIT",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/abdulrahmat97dev/quasar-ext-pokemon-card.git"
   },
   "bugs": "",
   "homepage": "",
