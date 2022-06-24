@@ -44,7 +44,9 @@
     "rtlcss": "^2.6.1",
     "sass": "^1.29.0",
     "uglify-js": "^3.13.3",
-    "zlib": "^1.0.5"
+    "vuex": "^4.0.2",
+    "zlib": "^1.0.5",
+    "@vue/compiler-sfc": "^3.2.37"
   },
   "browserslist": [
     "last 4 Chrome versions",
@@ -55,8 +57,5 @@
     "last 4 ChromeAndroid versions",
     "last 4 FirefoxAndroid versions",
     "last 4 iOS versions"
-  ],
-  "dependencies": {
-    "@vue/compiler-sfc": "^3.2.37"
-  }
+  ]
 }

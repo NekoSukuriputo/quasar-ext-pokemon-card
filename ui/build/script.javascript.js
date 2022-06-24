@@ -28,9 +28,9 @@ const rollupPlugins = [
   }),
   json(),
   vuePlugin(),
-  buble({
-    objectAssign: 'Object.assign'
-  })
+  // buble({
+  //   objectAssign: 'Object.assign'
+  // })
 ]
 
 const builds = [
@@ -138,12 +138,12 @@ function build (builds) {
 function genConfig (opts) {
   Object.assign(opts.rollup.input, {
     plugins: rollupPlugins,
-    external: [ 'vue', 'quasar' ]
+    external: [ 'vue', 'quasar', 'vuex' ]
   })
 
   Object.assign(opts.rollup.output, {
     banner: buildConf.banner,
-    globals: { vue: 'Vue', quasar: 'Quasar' }
+    globals: { vue: 'Vue', quasar: 'Quasar', vuex:'Vuex' }
   })
 
   return opts

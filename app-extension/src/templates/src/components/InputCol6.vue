@@ -16,7 +16,7 @@
                 filled
                 outlined
                 dense
-                disable
+                :disable="disable"
                 hide-bottom-space
                 @update:model-value="(value) => emit('update:model', value)"
               />
@@ -46,6 +46,10 @@ defineProps({
   model: {
     required: true,
     type: String,
+  },
+  disable: {
+    required: false,
+    type: Boolean,
   },
 });
 const emit = defineEmits(["update:model"]);
